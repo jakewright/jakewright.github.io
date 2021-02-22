@@ -46,6 +46,10 @@ body {
   font: 1.6rem/1.5 Helvetica, Arial, sans-serif;
   color: #444; }
 
+@media (max-width: 800px) {
+  body {
+    margin: 10px 0; } }
+
 p {
   margin: 1.2rem 0; }
 
@@ -103,12 +107,14 @@ header {
   @media (max-width: 45rem) {
     header nav {
       width: 100%; }
-    header ul li {
-      padding-left: 0;
-      margin-right: 0; }
-      header ul li a {
-        color: #0000FF;
-        text-decoration: underline; } }
+    header ul {
+      margin-top: 1rem; }
+      header ul li {
+        padding-left: 0;
+        margin-right: 0; }
+        header ul li a {
+          color: #0000FF;
+          text-decoration: underline; } }
 .headline {
   text-align: center;
   letter-spacing: 1px;
@@ -139,7 +145,7 @@ footer {
         color: #0000FF; }
 
 ul.link-list {
-  line-height: 1.7; }
+  line-height: 1.8; }
   ul.link-list a {
     text-decoration: none; }
     ul.link-list a:hover {
