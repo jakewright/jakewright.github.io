@@ -1,0 +1,260 @@
+/* Variables */
+
+// Colors
+$palette-black: #000;
+$palette-mine-shaft: #222;
+$palette-tundora: #444;
+$palette-white: #FFF;
+
+$palette-razzmatazz: #E91878;
+$palette-crusta: #FC8829;
+$palette-electric-violet: #931DE7;
+$palette-blue: #0000FF;
+$palette-dodger-blue: #118BF5;
+$palette-pacific-blue: #02A9C1;
+$palette-malachite: #24D91C;
+
+$color-text-heading: $palette-mine-shaft;
+$color-text-body: $palette-tundora;
+$color-link: $palette-blue;
+
+@mixin text-gradient($from, $to) {
+  color: $from;
+  background: $from;
+  background: linear-gradient(45deg, $from, $to);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.red {
+  @include text-gradient($palette-razzmatazz, $palette-crusta);
+}
+
+.blue {
+  @include text-gradient($palette-electric-violet, $palette-dodger-blue);
+}
+
+.green {
+  @include text-gradient($palette-pacific-blue, $palette-malachite);
+}
+
+/* Global styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+  font: 1.6rem/1.5 Helvetica, Arial, sans-serif;
+  color: $color-text-body;
+}
+
+p {
+  margin: 1.2rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-text-heading;
+  line-height: 1.3;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: $color-text-heading;
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 3.2rem;
+}
+
+@media (max-width: 45rem) {
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 3rem 0 1.2rem;
+
+  .subtitle {
+    @extend .blue;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  h1 {
+    font-weight: normal;
+    font-size: 2.8rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    margin-left: auto; /* Move nav to the right */
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      font-size: 1.8rem;
+      padding: 0 10px;
+      margin-right: 1em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: $color-text-heading;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // When the screen is too small to show
+  // Jake Wright and the nav side-by-side
+  @media (max-width: 45rem) {
+    nav {
+      width: 100%; // Making the flex item full width forces it onto a new row
+    }
+
+    ul {
+      li {
+        padding-left: 0;
+        margin-right: 0;
+
+        a {
+          // Make it more obvious that these are links
+          color: $color-link;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.headline {
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 3rem 0;
+
+  .space {
+    display: none;
+  }
+}
+
+@media (max-width: 70rem) {
+  .headline {
+    text-align: left;
+
+    br {
+      display: none;
+    }
+
+    .space {
+      display: inline;
+    }
+  }
+}
+
+
+
+/* Footer */
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+
+  ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      padding: 0 10px;
+
+      a {
+        color: $color-link;
+      }
+    }
+  }
+}
+
+
+// Lists of links
+ul.link-list {
+  line-height: 1.7;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+//p > code {
+//  color: #FFFFFF;
+//  background: #000000;
+//  padding: 2px
+//}
+//
+//pre {
+//  color: #FFFFFF;
+//  background: #000000;
+//  padding: 24px;
+//  overflow-x: auto
+//}
+
+//article {
+//  padding: 24px 0
+//}
+
+//.center {
+//  display: block;
+//  margin-left: auto;
+//  margin-right: auto;
+//  width: 100%;
+//}
+
+//img {
+//  display: block;
+//  max-width: 100%;
+//  height: auto;
+//}
+
+//figcaption {
+//  color: #888;
+//  font: 12px/1.5 monospace;
+//  text-align: center;
+//}
+//
+//figure {
+//  margin: auto
+//}

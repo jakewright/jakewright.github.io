@@ -1,0 +1,17 @@
+---
+title: About
+type: page
+draft: true
+---
+
+My passion for web design began in 2004, not long after we got dial-up internet. I would use /Microsoft FrontPage/ to build websites for made-up companies. I spent the next few years learning HTML, CSS and JavaScript.
+
+In 2006, I learnt how to program in C# from a bright orange book that I bought in /PC World/. It guided me through building a web browser (which was really just an instance of /Internet Explorer/ with some custom buttons around the edge), among some other small programs. It was simple, and it was stupid, but it was exciting.
+
+[[/img/build-a-program-now.jpg]]
+
+My GCSE results were 5 A*s and 3 As. At this point, I knew I wanted to study Computer Science at university, and thanks to an outreach event that allowed me to visit when I was 16, I really wanted that university to be Cambridge. To this end, I studied /Maths/, /Further Maths/, /Physics/ and /Computing/ at A Level, achieving A*A*A*A*.
+
+The hard work paid off when I was invited for an interview at Cambridge and subsequently given an offer to study Computer Science at Queens' College.
+
+I made weekly vlogs throughout my time as a student and graduated in 2015 with a II.i. The course was very theoretical and has given me invaluable knowledge of the principles of Computer Science as well as the practical skills needed to solve problems. I am now living in London and working as a software engineer.

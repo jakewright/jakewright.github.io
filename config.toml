@@ -1,0 +1,4 @@
+baseURL = "https://jakewright.net"
+languageCode = "en-us"
+title = "Jake Wright"
+theme = "jake"
