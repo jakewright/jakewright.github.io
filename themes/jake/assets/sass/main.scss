@@ -57,6 +57,12 @@ body {
   color: $color-text-body;
 }
 
+@media (max-width: 800px) {
+  body {
+    margin: 10px 0;
+  }
+}
+
 p {
   margin: 1.2rem 0;
 }
@@ -142,6 +148,8 @@ header {
     }
 
     ul {
+      margin-top: 1rem;
+
       li {
         padding-left: 0;
         margin-right: 0;
@@ -181,7 +189,6 @@ header {
 }
 
 
-
 /* Footer */
 
 footer {
@@ -208,7 +215,7 @@ footer {
 
 // Lists of links
 ul.link-list {
-  line-height: 1.7;
+  line-height: 1.8;
 
   a {
     text-decoration: none;

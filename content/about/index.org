@@ -1,7 +1,7 @@
 ---
 title: About
 type: page
-draft: true
+draft: false
 ---
 
 My passion for web design began in 2004, not long after we got dial-up internet. I would use /Microsoft FrontPage/ to build websites for made-up companies. I spent the next few years learning HTML, CSS and JavaScript.
