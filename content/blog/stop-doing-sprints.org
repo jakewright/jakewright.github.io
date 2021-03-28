@@ -1,0 +1,128 @@
+#+title: Stop Doing Sprints
+#+date: 2021-03-28
+#+draft: true
+#+tags[]: agile, software engineering
+
+** Introduction
+
+#+BEGIN_CALLOUT
+#+BEGIN_EMOJI
+⚠️
+#+END_EMOJI
+#+BEGIN_TEXT
+Disclaimer: there is not a one-size-fits-all solution to running teams. Every team is different so what works for one team might not work for another. However, most of the ideas here should apply, at least to some extent, to /most/ teams.
+#+END_TEXT
+#+END_CALLOUT
+
+It's common for software development teams to work in "Sprints". A Sprint is a short, repeating period of time—typically 1 or 2 weeks long—during which the team works towards some goal(s).
+
+The idea of a Sprint comes from the [[https://scrumguides.org][Scrum framework]], which sets out a process for [[https://en.wikipedia.org/wiki/Agile_software_development][agile development]]. The process comes with some recurring meetings including Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective. The framework sets out this process in detail so I'll not dive any deeper.
+
+This article is not anti-Scrum, but an argument against the rigidity and usefulness of Sprints.
+
+** Unnecessary jargon
+
+The word /Sprint/ is jargon. It's not immediately obvious what it means. It can already be difficult to have technical and non-technical people communicate effectively; we can do without inventing new words.
+
+Imagine you're speaking to someone from a different part of the business, and they work in a more traditional way so are not familiar with agile jargon. If you say "we can start work on project /x/ in the next Sprint", this will be meaningless. They don't know what a Sprint is, and they probably don't care.
+
+This barrier to entry also applies to new joiners. Someone who has never worked in an "agile" team before (and doesn't spend their evenings reading up on agile methodologies) will have to learn this new concept. Sure, it's simple enough, but it's still something new to learn. It's still jargon. If only there were an existing word that everyone already understands, that describes a regular period of time of roughly the same length. 🤔
+
+** Stop obsessing over story points
+
+I've observed that working in Sprints encourages people to obsess over making sure that all of the work fits perfectly in the Sprint. E.g., if your Sprint is 2 weeks, making sure you have /exactly/ 2 weeks worth of work planned before beginning the Sprint.
+
+This is tricky because you not only need to accurately estimate each  task (which is hard!), you also need to consider other factors that might eat into development time. Some of these things you will know in advance, e.g. holidays, people leaving, new joiners, company events. Some you won't, e.g. sick days, bugs, people spilling drinks on their laptops.
+
+*All that matters is knowing which pieces of work are the most impactful, i.e. which provide the most value with the least effort. Do those first.* Trying to make the story points add up to some magic number detracts from the real issues, and wastes everyone's time.
+
+If the work you've planned takes longer than a week (or two, or whatever arbitrary length your Sprint is), that's fine because you've already concluded that it's the most valuable thing to spend your time on. Once you remove this restriction that everything has to fit neatly into a two-week period, you free yourself to focus on the most important work.
+
+** It's a marathon, not a Sprint
+
+What does /Sprint/ actually mean?
+
+#+BEGIN_QUOTE
+    run at full speed over a short distance.
+#+END_QUOTE
+
+If we take this to be a metaphor, it presents some new problems. While there may be certain situations in which this type of working is necessary, this, and let me be very clear, is not how to run a sustainable software development team. People shouldn't be working at maximum speed indefinitely. This mindset can manifest itself in two ways:
+
+1. People push themselves too hard. This can lead to burnout.
+2. Features are rushed, and thinking is short-term. This can lead to a poor quality product, and technical debt, which will ultimately slow down the team.
+
+"It's a marathon, not a Sprint" is often what I'm told by team leads, managers, executives, etc. about big software projects. If that's the case, then why are we literally working in Sprints?
+
+** Start working in weeks
+
+A week is a natural, repeating period of time. Our working cycle is structured around a week (5 days on, 2 days off, repeat) so it makes sense for our planning cycle to be weekly too.
+
+Keep a prioritised backlog of stuff to do. Start each week with a planning session where you take tasks from the top of the backlog, discuss what they mean, and set some rough goals based on where you think you'll be by the end of the week. Involve the whole team so that everyone is on the same page about the week's mission. Everyone is aligned. Everyone has the opportunity to put forward their opinions, ask questions, and provide challenge.
+
+The work that you plan doesn't need to be /finished/ by the end of the week—there's no need to set deadlines—but it's useful to have some expectations so you can track progress and identify blockers.
+
+Often, there'll be in-flight work carried over from the previous week. In those cases, the planning session will be simple and you may be able to cut it short. It's still useful to have it though, to give everyone the chance to assess whether the on-going work remains the top priority.
+
+A bonus from structuring yourselves around a week is that you can stop using the word "Sprint" and just say "week".
+
+- We need to do /weekly/ planning
+- Did we achieve our goals last /week/?
+- We're going to have to delay it until next /week/
+
+Everyone knows what these sentences mean.
+
+#+BEGIN_CALLOUT
+#+BEGIN_EMOJI
+ℹ️
+#+END_EMOJI
+#+BEGIN_TEXT
+If your team has to align itself with an external schedule (e.g. a release cycle) which can't be changed, then thinking in weeks might not be optimal. As always, you need to find what works best for you and your team.
+#+END_TEXT
+#+END_CALLOUT
+
+** Embrace changing requirements
+
+The Scrum Guide says that during a Sprint, no changes should be made that would endanger the Sprint goal. In a perfect world, this makes sense. But in the real world, there is noise, there are interruptions, and there are changing requirements. You need to be ready to adapt to these changes—that's what being agile is all about. *To achieve maximum agility, you need to lose the rigidity of Sprints.*
+
+If there is new information that invalidates your current goals, or alters your top priorities, it's perfectly reasonable to change direction and start working on something new. Waiting until the end of a multi-week Sprint wastes time that could be spent on more impactful work. Working in a weekly cycle helps to alleviate this problem of teams having a "slow response time".
+
+If requirements and priorities (particularly those coming from external teams or from management) are changing on a daily basis, and the team therefore never gets anything finished, that is a separate problem. You should address the root cause of that problem. Pulling the team's shutters down for two weeks might give you a nice burn-down chart, but it doesn't help the /business/.
+
+Also remember that it's perfectly reasonable to push back on changing requirements and scope creep. Saying no, and staying focussed on what's important is not tied to working in Sprints.
+
+** How do I finish tickets within a week?
+
+You don't need to. I'm not proposing that you do weekly Sprints; I'm suggesting not doing Sprints at all.
+
+Sprints impose an arbitrary deadline on tickets which doesn't change how long it actually takes to do a piece of work. Removing the deadline won't change this either, but it will remove a source of stress. There are better ways to motivate a team than to have them constantly working to tight deadlines.
+
+Once your projects don't have to fit into a Sprint-shaped box, you can work much more natural and flexible way.
+
+- You can pick up bigger projects that are not well-scoped yet (i.e. they don't necessarily have to wait another two weeks just because they don't have a story point estimate on them yet)
+- You can spend time doing investigative work that might have previously compromised the Sprint goal
+- You don't have to wait until the end of the Sprint to release changes and gather feedback
+- You don't have to wait until the end of the Sprint to pick up new work
+
+Set realistic goals at the beginning of each week. Allow tasks and projects to flow between weeks as required. If necessary, set milestones to help track progress during the week.
+
+** Won't we end up with double the meetings?
+
+Not necessarily. Like I said above, I think you should have a planning session every week. If you're currently doing these fortnightly, this is one extra meeting every two weeks. Plus, if you only have to plan for one week instead of two, the meetings can probably be shorter.
+
+As for other meetings—backlog refinement, retrospectives, reviews, etc.—you don't have to do them twice as often if you don't get any value from it. Once you break free from the structure of Sprints, you're able to do whatever works for the team.
+
+** Summary
+
+Sprints impose a lot of structure and rigidity onto a team without necessarily providing value.
+
+- They force a team to spend extra time forecasting the weeks ahead when all that matters is knowing which work is most impactful
+- They prevent a team from reacting to changes mid-Sprint
+- The word itself is jargon, and not accessible to those not in-the-know
+- They encourage short-term thinking and unsustainable working habits
+- They add arbitrary deadlines that can have undesirable side-effects on product quality and team health
+
+Picking up new tasks as and when required, and allowing projects to flow freely from week-to-week removes a lot of the artificial restrictions and overhead that comes from Sprints.
+
+Planning one week at a time is natural and makes sense. You can still set goals, milestones, and estimate how long things are going to take but there's no need to set arbitrary deadlines for every task.
+
+Be flexible, be agile, be free, and stop doing Sprints.

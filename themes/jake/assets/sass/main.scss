@@ -1,9 +1,11 @@
 /* Variables */
 
 // Colors
+// https://chir.ag/projects/name-that-color
 $palette-black: #000;
 $palette-mine-shaft: #222;
 $palette-tundora: #444;
+$palette-alabaster: #F9F9F9;
 $palette-white: #FFF;
 
 $palette-razzmatazz: #E91878;
@@ -13,6 +15,8 @@ $palette-blue: #0000FF;
 $palette-dodger-blue: #118BF5;
 $palette-pacific-blue: #02A9C1;
 $palette-malachite: #24D91C;
+
+$color-bg-panel: $palette-alabaster;
 
 $color-text-heading: $palette-mine-shaft;
 $color-text-body: $palette-tundora;
@@ -223,6 +227,16 @@ ul.link-list {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.callout-block {
+  background-color: $color-bg-panel;
+  padding: 1rem 2rem;
+  display: flex;
+
+  .emoji-block {
+    margin-right: 1rem;
   }
 }
 
