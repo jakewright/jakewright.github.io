@@ -17,6 +17,8 @@
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
+	<script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+	<link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
 </head>
 <body>
 	{{ partial "header" . }}
