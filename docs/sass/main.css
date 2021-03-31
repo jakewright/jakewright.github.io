@@ -150,3 +150,10 @@ ul.link-list {
     text-decoration: none; }
     ul.link-list a:hover {
       text-decoration: underline; }
+
+.callout-block {
+  background-color: #F9F9F9;
+  padding: 1rem 2rem;
+  display: flex; }
+  .callout-block .emoji-block {
+    margin-right: 1rem; }
