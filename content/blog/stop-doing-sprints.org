@@ -1,6 +1,5 @@
 #+title: Stop Doing Sprints
 #+date: 2021-03-28
-#+cactus: stop-doing-sprints
 #+draft: true
 #+tags[]: agile, software engineering
 
